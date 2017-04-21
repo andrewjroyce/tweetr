@@ -1,0 +1,65 @@
+#tweet-article{
+}
+
+#tweet-article:hover{
+	
+}
+
+.tweet-container{
+	margin-top:2em;
+    border-radius: 10px;
+    background: white;
+    width: 350px;
+	border: 2px solid black;
+    position: relative;
+    /*display: table;*/
+}
+
+#favicon{
+	padding: 2px;
+}
+
+.user{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+    background: #eee;
+    width: 100%;
+    height: 50px; 
+}
+
+.name{
+	position: relative;
+  	top: -40%;
+}
+
+.handle{
+	/*text-align:right;*/
+	padding-left: 58%;
+	position: relative;
+  	top: -27%;
+  	font-size: 50%;
+}
+
+.content{
+	width: 100%;
+    height: 70px; 
+    border-bottom: 1px solid black
+}
+
+#tweet-body{
+padding:3px;
+}
+
+#tweet-footer.favicon{
+display:none;
+}
+#tweet-footer:hover {
+
+}
+
+.created-at{
+padding:5px;
+margin-top:50px;
+}
+
+

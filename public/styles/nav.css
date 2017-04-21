@@ -22,3 +22,29 @@ line-height: 1.9;
 padding: 10px;
 font-size: 200%;
 }
+
+.compose {
+	border: 1px solid black;
+	float:right;
+	margin-right:10%;
+	margin-top:3%;
+	top: 40%;
+}
+
+.compose:hover {
+	border: 1px solid black;
+	float:right;
+	margin-right:10%;
+	margin-top:3%;
+	top: 40%;
+	background-color: white;
+	cursor: pointer;
+}
+
+
+
+/*
+    Think about the DOM structure. Ideally you create the HTML for it such that multiple navigational items/buttons can be placed on the right side.
+    The button should change appearance on hover so that it is clear to the user that it is a clickable link.
+    There should be sufficient spacing around the button, and you should aim to make it appear as similar as possible to our depiction.
+*/

@@ -1,11 +1,21 @@
 var max = 140;
-// var len = $('textarea').val().length;
-// var char = max - len;
-// var count =0;	
+var length = 0; 
+$(document).ready(function() {
+    $('textarea#tweetbox').on('keyup', (function(event) {
+	    length = $(this).val().length;
+	    var charCount = max - length; $('span.counter').html(charCount);
+	    var el = $('span.counter')
+        if(length < max) {
+            el.css('color', 'green');
+        } if(length > max ) {
+         el.css('color', 'red');
+        }
+	}))
 
+})
 
 // $(document).ready(function() {
-// 	$('input').on('keyup',(function(){		
+// 	$('#textarea').on('keyup',(function(){		
 //     var keyed = $(this).val().length; console.log(keyed)})
 // )})
 
@@ -14,12 +24,12 @@ var max = 140;
 //     var keyed = $(this).val().length; console.log(keyed)})
 // )})
 
-$(document).ready(function() {
-	$(this).on('keyup',(function(){		
-    var length = $(this).val().length; console.log(keyed)})
-    var length = maxLength-length;
-    $('#counter').text(length);
-)})
+// $(document).ready(function() {
+// 	$('#.textarea').on('keyup',(function(){		
+//     var keyed = $(this).val().length; console.log(keyed)})
+// )})
+
+
 
 
 
