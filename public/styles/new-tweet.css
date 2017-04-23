@@ -1,65 +1,46 @@
-
-main.container {
-padding-top: 5%;
-width: 450px;
-margin-left: auto;
-margin-right: auto;
-padding-right: 12%;
-padding-left: 12%;
-background-color: white;
-height: 540px;
-position: static;
-top: 80px;
+.button {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-body {
-  margin: 0;
-  color: #244751;
-  background-color: #eee;
-  font-family: "Roboto Condensed", Sans-Serif;
+.postarea {
+    width: 100%;
+    height: 100px;
 }
 
-button, input{
-
-}
-
-.postarea{
-}
-
-.new-tweet{
-
+.new-tweet {
+    width: 90%;
 }
 
 section.new-tweet {
     border-radius: 10px;
     background: #eee;
-    padding: 10px;
-    width: 350px;
-    height: 150px; 
+    padding: 7px;
+    width: 100%;
+    height: 130px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .headline {
-	padding: 1px;
-	margin: 1px;
-	border-bottom: 1px solid black
+    padding: 1px;
+    margin: 1px;
+    border-bottom: 1px solid black
 }
 
-textarea#tweet-box{
-  margin-top: 3px;
-	padding: 2px;
-  width:90%;
+textarea#tweetbox {
+    padding-top: 2px;
+    margin: 6px 0 3px 0;
+    width: 100%;
 }
+
 span.counter {
-	margin-left: 72%;
-/*	margin-top: 100%;*/
-  /*top: -24%;*/
-  padding: 6px;
+    float: right;
+    margin: 0 8px 0 0;
+    font-size: 70%
 }
 
-#submit{
-  margin-left: 0;
-  margin-top:5%;
+#submit {
+    float: left;
 }

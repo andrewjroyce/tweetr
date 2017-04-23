@@ -1,50 +1,43 @@
-/*#nav-bar */ .logo {
- height: 80px;
- width: 80px;
- padding: 10px;
-}
-
-/*#nav-bar */ nav {
-top: 0;
-position: fixed;
-height: 80px;
-width:100%;
-background-color: #00a087;
-font-color:#e8fdff;
-padding: 0, 2em, 0, 2em;
-    overflow: hidden;
-}
-
-#nav-bar span.header {
-position: fixed;
-/*top: 35px;*/
-line-height: 1.9;
-padding: 10px;
-font-size: 200%;
-}
-
-.compose {
-	border: 1px solid black;
-	float:right;
-	margin-right:10%;
-	margin-top:3%;
-	top: 40%;
-}
-
-.compose:hover {
-	border: 1px solid black;
-	float:right;
-	margin-right:10%;
-	margin-top:3%;
-	top: 40%;
-	background-color: white;
-	cursor: pointer;
-}
-
-
-
-/*
-    Think about the DOM structure. Ideally you create the HTML for it such that multiple navigational items/buttons can be placed on the right side.
-    The button should change appearance on hover so that it is clear to the user that it is a clickable link.
-    There should be sufficient spacing around the button, and you should aim to make it appear as similar as possible to our depiction.
-*/
+ .logo {
+     height: 80px;
+     width: 80px;
+     float: left;
+ }
+ 
+ nav {
+     top: 0;
+     padding: 0 1.8em 0 1.8em;
+     position: fixed;
+     height: 80px;
+     width: 100%;
+     background-color: #00a087;
+     color: #e8fdff;
+     padding: 0, 2em, 0, 2em;
+     overflow: hidden;
+     z-index: 10;
+ }
+ 
+ #nav-bar span.header {
+     position: fixed;
+     line-height: 1.9;
+     padding: 10px;
+     font-size: 200%;
+ }
+ 
+ .compose {
+     border: 1px solid black;
+     float: right;
+     padding: .8em;
+     margin-top: 1.5%;
+     margin-right: 7%;
+     border-radius: 5px;
+     top: 40%;
+     background-color: #cdeecd;
+     color: #00a087;
+ }
+ 
+ .compose:hover {
+     background-color: white;
+     color: black;
+     cursor: pointer;
+ }

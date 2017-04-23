@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/font-awesome.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-area.css" type="text/css" />
-
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-    
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
 </head>
+
 <body>
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
         <img class="logo" src="/images/bird.png">
         <span class="header">Tweeter</span>
-        <span class="compose">Compose</span>
+        <button class="compose" type='button'><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Compose
+        </button>
     </nav>
     <!-- Page-specific (main) <content></content>tent here -->
     <main class="container">
         <section class="new-tweet">
             <h2 class="headline">Compose Tweet</h2>
             <form id="postarea" class="postarea" method="POST" action="/tweets/">
-                <textarea id="tweetbox" name="text" placeholder="What are you humming about?"></textarea>
+                <textarea id="tweetbox" name="text" placeholder="What ?"></textarea>
                 <input class="submit" type="submit" value="Tweet">
                 <span class="counter">140</span>
             </form>
         </section>
         <section class="tweet-area">
-            <article class="tweet-container">
-                <header class="user"><img id='avatars' src="https://1.gravatar.com/avatar/a2e158716c4ac1062e7c458a5bb3bf8c?s=42&d=wavatar&r=R" height="42" width="42">
-                    <span class="name"> Bill Fields</span>
-                    <span class="handle"> MrFields </span>
-                </header>
-                <section class="content">
-                    <span class="tweet-body"> This is how it all started</span>
-                </section>
-                <footer id="tweet-footer">
-                    <span class="created_at">Days Ago</span>
-                    <img class="favicon" id="flag" src="http://www.deq.state.mi.us/beach/images/red_flag_small.png" height="15" width="15">
-                    <img class="favicon" id="recycle" src="http://cpsk12.schoolwires.net/cms/lib8/MO01909752/Centricity/Template/35/recycle.png" height="15" width="15">
-                    <img class="favicon" id="recycle" src="http://forum.brillkids.com/Smileys/emoji/heart.png" height="15" width="15">
-                </footer>
-            </article>
         </section>
     </main>
 </body>
-
-
 </html>

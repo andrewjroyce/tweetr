@@ -4,7 +4,6 @@
   "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
   },
@@ -14,10 +13,10 @@
     "body-parser": "^1.15.2",
     "chance": "^1.0.2",
     "express": "^4.15.2",
-    "jQuery": "^1.7.4",
     "jquery": "^3.2.1",
     "jsdom": "^9.12.0",
     "md5": "^2.1.0",
+    "mongodb": "^2.2.26",
     "node": "0.0.0",
     "request": "^2.81.0"
   },
